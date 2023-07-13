@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1,maximum-scale=5,minimum-scale=1,width=device-width">
+        <title>JSON Storage Test</title>
+    </head>
+    <body>
+        <script type="module">
+            import store from "https://esm.sh/@axel669/json-storage@0.1.1"
+
+            const local = store(localStorage)
+            const dndInit = store(localStorage, "dnd-init")
+
+            console.log(local)
+            console.log(local.wat)
+            local.wat = [1, 2, 3]
+            console.log(local.wat)
+            delete local.wat
+            console.log(local.wat)
+            for (const [key, value] of dndInit) {
+                console.log(key, value)
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "@axel669/json-storage",
+  "version": "0.1.1",
+  "description": "",
+  "main": "main.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "axel669",
+  "license": "MIT",
+  "files": [
+    "main.mjs"
+  ]
+}
